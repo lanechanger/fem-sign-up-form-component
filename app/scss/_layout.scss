@@ -1,0 +1,36 @@
+.l-site-container {
+  margin: 0 6.4%;
+}
+
+.l-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.l-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.l-flex-col--to-row {
+  @extend .l-flex-col;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+  }
+}
+
+// modular layout
+.intro {
+  &__header {
+    margin-top: rem(88px);
+  }
+
+  &__text {
+    margin-top: rem(16px);
+  }
+}

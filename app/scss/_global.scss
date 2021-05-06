@@ -13,6 +13,11 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+  height: 100%;
+  min-height: 100vh;
+  background: no-repeat url(/images/bg-intro-mobile.png) center/contain $red;
 }
 
 .attribution {
@@ -21,5 +26,9 @@ body {
 
   & a {
     color: hsl(228, 45%, 44%);
+  }
+
+  @include breakpoint-up(medium) {
+    flex: 0 0 100%;
   }
 }

@@ -1,0 +1,14 @@
+.intro {
+  &__header {
+    font-weight: 700;
+    font-size: rem(28px);
+    line-height: calc(36/28);
+    letter-spacing: rem(-0.291667px);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: calc(26/16);
+  }
+}
