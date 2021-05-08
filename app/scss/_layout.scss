@@ -39,3 +39,11 @@
   margin-top: rem(64px);
   padding: rem(18px) 20.34%;
 }
+
+.register {
+  padding: rem(24px) 7.34%;
+
+  &__btn {
+    padding: rem(15px) 0;
+  }
+}
