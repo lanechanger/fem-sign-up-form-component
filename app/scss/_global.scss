@@ -18,6 +18,30 @@ body {
   height: 100%;
   min-height: 100vh;
   background: no-repeat url(/images/bg-intro-mobile.png) center/contain $red;
+  font-weight: 500;
+  font-size: rem(11px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.br-5 {
+  border-radius: rem(5px);
+}
+
+.br-10 {
+  border-radius: rem(10px);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .attribution {

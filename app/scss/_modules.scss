@@ -7,7 +7,6 @@
   }
 
   &__text {
-    font-weight: 500;
     font-size: rem(16px);
     line-height: calc(26/16);
   }
@@ -16,7 +15,6 @@
 .promo {
   background-color: $blue;
   box-shadow: 0px rem(8px) 0px rgba(0, 0, 0, 0.14688);
-  border-radius: rem(10px);
   font-weight: 500;
   font-size: rem(15px);
   line-height: calc(26/15);
@@ -26,7 +24,27 @@
 .register {
   background-color: white;
   box-shadow: 0px rem(8px) 0px rgba(0, 0, 0, 0.14688);
-  border-radius: rem(10px);
+
+  &__input {
+    border: rem(1px) solid #DEDEDE;
+    color: $darkBlue;
+    font-weight: 600;
+    font-size: rem(14px);
+    line-height: calc(26/14);
+    letter-spacing: rem(0.25px);
+    opacity: 0.75;
+
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right rem(27px) center;
+  }
+
+  &__error {
+    font-style: italic;
+    text-align: right;
+    color: $red;
+    line-height: calc(16/11);
+  }
 
   &__btn {
     font-weight: 600;
@@ -35,10 +53,18 @@
     letter-spacing: rem(1px);
     color: white;
     background-color: $green;
-    width: 100%;
     box-shadow: inset 0px rem(-4px) 0px rgba(0, 0, 0, 0.0908818);
-    border-radius: rem(5px);
     border: none;
     text-transform: uppercase;
+  }
+
+  &__btn-terms {
+    line-height: calc(21/11);
+    color: $grayishBlue;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: $red;
   }
 }

@@ -31,7 +31,7 @@
   }
 
   &__text {
-    margin-top: rem(16px);
+    margin-top: rem(24px);
   }
 }
 
@@ -41,9 +41,31 @@
 }
 
 .register {
+  margin-top: rem(24px);
   padding: rem(24px) 7.34%;
+
+  &__input {
+    padding: rem(14px) rem(27px) rem(14px) rem(19.41px);
+
+    &:not(:first-of-type) {
+      margin-top: rem(16px);
+    }
+  }
+
+  &__error {
+    margin-top: rem(6px);
+  }
 
   &__btn {
     padding: rem(15px) 0;
+    margin-top: rem(16px);
   }
+
+  &__btn-terms {
+    margin: rem(8px) 5.38% 0 5.38%;
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
 }
