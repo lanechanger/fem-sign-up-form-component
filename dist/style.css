@@ -170,6 +170,11 @@ a {
   text-align: right;
   color: #ff7a7a;
   line-height: calc(16/11);
+  display: none;
+}
+
+.register__error.is-error {
+  display: block;
 }
 
 .register__btn {
@@ -182,6 +187,7 @@ a {
   box-shadow: inset 0px -0.25rem 0px rgba(0, 0, 0, 0.0908818);
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .register__btn-terms {

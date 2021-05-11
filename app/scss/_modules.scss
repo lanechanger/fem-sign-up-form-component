@@ -44,6 +44,11 @@
     text-align: right;
     color: $red;
     line-height: calc(16/11);
+    display: none;
+
+    &.is-error {
+      display: block;
+    }
   }
 
   &__btn {
@@ -56,6 +61,7 @@
     box-shadow: inset 0px rem(-4px) 0px rgba(0, 0, 0, 0.0908818);
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   &__btn-terms {
