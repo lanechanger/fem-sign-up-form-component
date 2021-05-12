@@ -34,9 +34,14 @@
     letter-spacing: rem(0.25px);
     opacity: 0.75;
 
-    background-image: url(/images/icon-error.svg);
+    background-image: none;
     background-repeat: no-repeat;
     background-position: right rem(27px) center;
+
+    &--is-error {
+      background-image: url(/images/icon-error.svg);
+      border: rem(2px) solid $red;
+    }
   }
 
   &__error {
