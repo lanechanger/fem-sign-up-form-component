@@ -22,6 +22,12 @@ body {
   font-size: 0.6875rem;
 }
 
+@media (min-width: 1240px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -63,6 +69,12 @@ a {
   margin: 0 6.4%;
 }
 
+@media (min-width: 1240px) {
+  .l-site-container {
+    margin: 0 11.459%;
+  }
+}
+
 .l-flex-col, .l-flex-col--to-row {
   display: flex;
   flex-direction: column;
@@ -77,18 +89,28 @@ a {
   flex-wrap: wrap;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1240px) {
   .l-flex-col--to-row {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
-.intro__header {
-  margin-top: 5.5rem;
+@media (max-width: 639px) {
+  .intro__header {
+    margin-top: 5.5rem;
+  }
 }
 
 .intro__text {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 1240px) {
+  .intro__text {
+    margin-top: 2rem;
+  }
 }
 
 .promo {
@@ -122,8 +144,10 @@ a {
   margin: 0.5rem 5.38% 0 5.38%;
 }
 
-.attribution {
-  margin-top: 1rem;
+@media (max-width: 639px) {
+  .attribution {
+    margin-top: 1rem;
+  }
 }
 
 .intro__header {
@@ -133,9 +157,30 @@ a {
   letter-spacing: -0.01823rem;
 }
 
+@media (min-width: 1240px) {
+  .intro__header {
+    font-size: 3.125rem;
+    line-height: calc(55/50);
+    letter-spacing: -0.03255rem;
+  }
+}
+
 .intro__text {
   font-size: 1rem;
   line-height: calc(26/16);
+}
+
+@media (min-width: 1240px) {
+  .intro {
+    flex: 0 1 47.298%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1240px) {
+  .app {
+    flex: 0 1 48.65%;
+  }
 }
 
 .promo {

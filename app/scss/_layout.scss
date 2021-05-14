@@ -1,5 +1,9 @@
 .l-site-container {
   margin: 0 6.4%;
+
+  @include breakpoint-up(large) {
+    margin: 0 11.459%;
+  }
 }
 
 .l-flex-col {
@@ -19,21 +23,31 @@
 .l-flex-col--to-row {
   @extend .l-flex-col;
 
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 // modular layout
 .intro {
   &__header {
-    margin-top: rem(88px);
+    @include breakpoint-down(small) {
+      margin-top: rem(88px);
+    }
   }
 
   &__text {
     margin-top: rem(24px);
+
+    @include breakpoint-up(large) {
+      margin-top: rem(32px);
+    }
   }
 }
+
+.app {}
 
 .promo {
   margin-top: rem(64px);
@@ -67,5 +81,7 @@
 }
 
 .attribution {
-  margin-top: 1rem;
+  @include breakpoint-down(small) {
+    margin-top: 1rem;
+  }
 }

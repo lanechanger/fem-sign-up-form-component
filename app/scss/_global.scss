@@ -20,6 +20,10 @@ body {
   background: no-repeat url(/images/bg-intro-mobile.png) center/contain $red;
   font-weight: 500;
   font-size: rem(11px);
+
+  @include breakpoint-up(large) {
+    background-image: url(/images/bg-intro-desktop.png);
+  }
 }
 
 a {
