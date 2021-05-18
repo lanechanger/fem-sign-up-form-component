@@ -89,6 +89,10 @@
   &__btn-terms {
     line-height: calc(21/11);
     color: $grayishBlue;
+
+    @include breakpoint-up(large) {
+      line-height: calc(26/11);
+    }
   }
 
   &__link {

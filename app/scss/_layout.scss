@@ -89,6 +89,11 @@
 
   &__btn-terms {
     margin: rem(8px) 5.38% 0 5.38%;
+
+    @include breakpoint-up(large) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
 

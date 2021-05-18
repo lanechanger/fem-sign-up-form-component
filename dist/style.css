@@ -162,6 +162,13 @@ a {
   margin: 0.5rem 5.38% 0 5.38%;
 }
 
+@media (min-width: 1240px) {
+  .register__btn-terms {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 639px) {
   .attribution {
     margin-top: 1rem;
@@ -261,6 +268,12 @@ a {
 .register__btn-terms {
   line-height: calc(21/11);
   color: #b9b6d3;
+}
+
+@media (min-width: 1240px) {
+  .register__btn-terms {
+    line-height: calc(26/11);
+  }
 }
 
 .register__link {
