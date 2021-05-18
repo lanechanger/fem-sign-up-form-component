@@ -123,12 +123,24 @@ a {
   padding: 1.5rem 7.34%;
 }
 
+@media (min-width: 1240px) {
+  .register {
+    padding: 2.5rem 7.41%;
+  }
+}
+
 .register__input {
   padding: 0.875rem 1.6875rem 0.875rem 1.21313rem;
 }
 
 .register__input:not(:first-of-type) {
   margin-top: 1rem;
+}
+
+@media (min-width: 1240px) {
+  .register__input:not(:first-of-type) {
+    margin-top: 1.25rem;
+  }
 }
 
 .register__error {
@@ -138,6 +150,12 @@ a {
 .register__btn {
   padding: 0.9375rem 0;
   margin-top: 1rem;
+}
+
+@media (min-width: 1240px) {
+  .register__btn {
+    margin-top: 1.25rem;
+  }
 }
 
 .register__btn-terms {

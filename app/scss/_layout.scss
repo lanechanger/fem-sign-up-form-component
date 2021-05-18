@@ -58,11 +58,19 @@
   margin-top: rem(24px);
   padding: rem(24px) 7.34%;
 
+  @include breakpoint-up(large) {
+    padding: rem(40px) 7.41%;
+  }
+
   &__input {
     padding: rem(14px) rem(27px) rem(14px) rem(19.41px);
 
     &:not(:first-of-type) {
       margin-top: rem(16px);
+
+      @include breakpoint-up(large) {
+        margin-top: rem(20px);
+      }
     }
   }
 
@@ -73,6 +81,10 @@
   &__btn {
     padding: rem(15px) 0;
     margin-top: rem(16px);
+
+    @include breakpoint-up(large) {
+      margin-top: rem(20px);
+    }
   }
 
   &__btn-terms {
