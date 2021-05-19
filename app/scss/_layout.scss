@@ -65,6 +65,10 @@
   &__input {
     padding: rem(14px) rem(27px) rem(14px) rem(19.41px);
 
+    @include breakpoint-up(large) {
+      padding-left: rem(32px);
+    }
+
     &:not(:first-of-type) {
       margin-top: rem(16px);
 

@@ -133,6 +133,12 @@ a {
   padding: 0.875rem 1.6875rem 0.875rem 1.21313rem;
 }
 
+@media (min-width: 1240px) {
+  .register__input {
+    padding-left: 2rem;
+  }
+}
+
 .register__input:not(:first-of-type) {
   margin-top: 1rem;
 }
