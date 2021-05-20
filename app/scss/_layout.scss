@@ -33,8 +33,10 @@
 // modular layout
 .intro {
   &__header {
-    @include breakpoint-down(small) {
-      margin-top: rem(88px);
+    margin-top: rem(88px);
+
+    @include breakpoint-up(large) {
+      margin-top: 0;
     }
   }
 
@@ -46,8 +48,6 @@
     }
   }
 }
-
-.app {}
 
 .promo {
   margin-top: rem(64px);
@@ -102,7 +102,6 @@
 }
 
 .attribution {
-  @include breakpoint-down(small) {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

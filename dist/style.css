@@ -97,9 +97,13 @@ a {
   }
 }
 
-@media (max-width: 639px) {
+.intro__header {
+  margin-top: 5.5rem;
+}
+
+@media (min-width: 1240px) {
   .intro__header {
-    margin-top: 5.5rem;
+    margin-top: 0;
   }
 }
 
@@ -175,10 +179,9 @@ a {
   }
 }
 
-@media (max-width: 639px) {
-  .attribution {
-    margin-top: 1rem;
-  }
+.attribution {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .intro__header {
