@@ -7,16 +7,27 @@
 }
 
 .l-flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .l-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 .l-flex-wrap {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -24,8 +35,15 @@
   @extend .l-flex-col;
 
   @include breakpoint-up(large) {
-    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -83,8 +101,8 @@
   }
 
   &__btn {
-    padding: rem(15px) 0;
     margin-top: rem(16px);
+    padding: rem(15px) 0;
 
     @include breakpoint-up(large) {
       margin-top: rem(20px);
@@ -95,13 +113,13 @@
     margin: rem(8px) 5.38% 0 5.38%;
 
     @include breakpoint-up(large) {
-      margin-right: 0;
       margin-left: 0;
+      margin-right: 0;
     }
   }
 }
 
 .attribution {
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }

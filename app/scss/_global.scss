@@ -1,25 +1,25 @@
 html {
-  font-size: 100%;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+  background: no-repeat url(/images/bg-intro-mobile.png) center/contain $red;
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: rem(11px);
+  font-weight: 500;
   height: 100%;
   min-height: 100vh;
-  background: no-repeat url(/images/bg-intro-mobile.png) center/contain $red;
-  font-weight: 500;
-  font-size: rem(11px);
+  text-align: center;
 
   @include breakpoint-up(large) {
     background-image: url(/images/bg-intro-desktop.png);
@@ -40,6 +40,7 @@ a {
 
 .visually-hidden {
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -58,6 +59,8 @@ a {
   }
 
   @include breakpoint-up(medium) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
 }

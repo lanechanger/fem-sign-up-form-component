@@ -18,6 +18,8 @@
   }
 
   @include breakpoint-up(large) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 47.298%;
     flex: 0 1 47.298%;
     text-align: left;
   }
@@ -25,6 +27,8 @@
 
 .app {
   @include breakpoint-up(large) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 48.65%;
     flex: 0 1 48.65%;
   }
 }
