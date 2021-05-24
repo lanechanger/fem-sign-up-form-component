@@ -24,9 +24,9 @@ registerBtn.addEventListener("click", function (event) {
   let emailValue = emailInput.value;
   let passValue = passInput.value;
 
-  if (validateEmpty(firstValue, firstInput, firstError) &&
-    validateEmpty(lastValue, lastInput, lastError) &&
-    validateEmail(emailValue, emailInput, emailError) &&
+  if (validateEmpty(firstValue, firstInput, firstError) &
+    validateEmpty(lastValue, lastInput, lastError) &
+    validateEmail(emailValue, emailInput, emailError) &
     validateEmpty(passValue, passInput, passError)) {
     // submit form only if all inputs validate
     console.log("all 4 inputs valid, submitting");
