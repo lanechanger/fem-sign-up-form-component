@@ -17,30 +17,36 @@
   <header class="intro">
     <h1 class="intro__header">Learn to code by watching others</h1>
     <p class="intro__text">
-      See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-      but understanding how developers think is invaluable.
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+      understanding how developers think is invaluable.
     </p>
   </header>
 
   <main class="app">
     <h2 class="promo br-10"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
 
-    <form class="register l-flex-col br-10" action="#">
+    <form class="register l-flex-col br-10" action="#" role="form">
       <label for="first-name" class="visually-hidden">First name</label>
-      <input id="first-name" class="register__input br-5" type="text" placeholder="First Name"></input>
-      <span class="register__error register--first-error">First Name cannot be empty</span>
+      <input id="first-name" class="register__input br-5" type="text" placeholder="First Name" aria-required="true"
+        aria-errormessage="firstError" aria-invalid="false"></input>
+      <span class="register__error register--first-error" id="firstError" aria-live="off">First Name cannot be
+        empty</span>
 
       <label for="last-name" class="visually-hidden">Last Name</label>
-      <input id="last-name" class="register__input br-5" type="text" placeholder="Last Name"></input>
-      <span class="register__error register--last-error">Last Name cannot be empty</span>
+      <input id="last-name" class="register__input br-5" type="text" placeholder="Last Name" aria-required="true"
+        aria-errormessage="lastError" aria-invalid="false"></input>
+      <span class="register__error register--last-error" id="lastError" aria-live="off">Last Name cannot be empty</span>
 
       <label for="email" class="visually-hidden">Email</label>
-      <input id="email" class="register__input br-5" type="email" placeholder="Email Address"></input>
-      <span class="register__error register--email-error">Looks like this is not an email</span>
+      <input id="email" class="register__input br-5" type="email" placeholder="Email Address" aria-required="true"
+        aria-errormessage="emailError" aria-invalid="false"></input>
+      <span class="register__error register--email-error" id="emailError" aria-live="off">Looks like this is not an
+        email</span>
 
       <label for="password" class="visually-hidden">Password</label>
-      <input id="password" class="register__input br-5" type="password" placeholder="Password"></input>
-      <span class="register__error register--pass-error">Password cannot be empty</span>
+      <input id="password" class="register__input br-5" type="password" placeholder="Password" aria-required="true"
+        aria-errormessage="passError" aria-invalid="false"></input>
+      <span class="register__error register--pass-error" id="passError" aria-live="off">Password cannot be empty</span>
 
       <button class="register__btn br-5" type="submit">Claim your free trial</button>
       <span class="register__btn-terms">By clicking the button, you are agreeing to our <a class="register__link"
