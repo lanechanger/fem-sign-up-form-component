@@ -65,9 +65,13 @@ function validateEmail(value, input, error) {
 function addErrorClasses(input, error) {
   input.classList.add(inputIsErrorClass);
   error.classList.add(errorIsErrorClass);
+  input.setAttribute("aria-invalid", true);
+  error.setAttribute("aria-live", "assertive");
 }
 
 function removeErrorClasses(input, error) {
   input.classList.remove(inputIsErrorClass);
   error.classList.remove(errorIsErrorClass);
+  input.setAttribute("aria-invalid", false);
+  error.setAttribute("aria-live", "off");
 }
