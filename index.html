@@ -25,33 +25,35 @@
   <main class="app">
     <h2 class="promo br-10"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
 
-    <form class="register l-flex-col br-10" action="#" role="form" aria-describedby="freeTrialBtn"
-      aria-labelledby="freeTrialBtn">
+    <form class="register l-flex-col br-10" action="#" aria-describedby="freeTrialBtn" aria-labelledby="freeTrialBtn">
+      <!-- apparently this should automatically adopt role="form" if it has the labelled by, so test that out and if it works we can delete the role, and maybe even the describedby? -->
+
       <label for="first-name" class="visually-hidden">First name</label>
-      <input id="first-name" class="register__input br-5" type="text" placeholder="First Name" aria-required="true"
+      <input id="first-name" class="register__input br-5" type="text" placeholder="First Name" required
         aria-errormessage="firstError" aria-invalid="false"></input>
       <span class="register__error register--first-error" id="firstError" aria-live="off">First Name cannot be
         empty</span>
 
       <label for="last-name" class="visually-hidden">Last Name</label>
-      <input id="last-name" class="register__input br-5" type="text" placeholder="Last Name" aria-required="true"
+      <input id="last-name" class="register__input br-5" type="text" placeholder="Last Name" required
         aria-errormessage="lastError" aria-invalid="false"></input>
       <span class="register__error register--last-error" id="lastError" aria-live="off">Last Name cannot be empty</span>
 
       <label for="email" class="visually-hidden">Email</label>
-      <input id="email" class="register__input br-5" type="email" placeholder="Email Address" aria-required="true"
+      <input id="email" class="register__input br-5" type="email" placeholder="Email Address" required
         aria-errormessage="emailError" aria-invalid="false"></input>
       <span class="register__error register--email-error" id="emailError" aria-live="off">Looks like this is not an
         email</span>
 
       <label for="password" class="visually-hidden">Password</label>
-      <input id="password" class="register__input br-5" type="password" placeholder="Password" aria-required="true"
+      <input id="password" class="register__input br-5" type="password" placeholder="Password" required
         aria-errormessage="passError" aria-invalid="false"></input>
       <span class="register__error register--pass-error" id="passError" aria-live="off">Password cannot be empty</span>
 
-      <button class="register__btn br-5" type="submit" id="freeTrialBtn">Claim your free trial</button>
-      <span class="register__btn-terms">By clicking the button, you are agreeing to our <a class="register__link"
-          href="#">Terms and Services</a>
+      <button class="register__btn br-5" type="submit" id="freeTrialBtn" aria-describedby="terms">Claim your free
+        trial</button>
+      <span class="register__btn-terms" id="terms">By clicking the button, you are agreeing to our <a
+          class="register__link" href="#">Terms and Services</a>
       </span>
     </form>
   </main>
