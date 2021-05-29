@@ -84,12 +84,16 @@ function addErrorClasses(input, error) {
   input.classList.add(inputIsErrorClass);
   error.classList.add(errorIsErrorClass);
   input.setAttribute("aria-invalid", true);
-  error.setAttribute("aria-live", "assertive");
+  // I initially had the removeAttribute() under removeErrorClasses() but I guess once 
+  // it's been read out it doesn't really matter, and also, I think it makes more 
+  // sense to have the error message announced everytime the user tabs off if their 
+  // input is still invalid
+  error.removeAttribute("role");
+  error.setAttribute("role", "alert");
 }
 
 function removeErrorClasses(input, error) {
   input.classList.remove(inputIsErrorClass);
   error.classList.remove(errorIsErrorClass);
   input.setAttribute("aria-invalid", false);
-  error.setAttribute("aria-live", "off");
 }
