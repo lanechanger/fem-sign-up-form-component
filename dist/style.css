@@ -289,4 +289,11 @@ a {
   font-weight: 700;
   color: #ff7a7a;
 }
+
+@media (forced-colors: active) {
+  button {
+    /* Use a border instead, since this barely looks like a button in forced-colors mode */
+    border: 2px ButtonText solid;
+  }
+}
 /*# sourceMappingURL=style.css.map */

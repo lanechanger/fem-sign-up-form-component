@@ -104,3 +104,11 @@
     color: $red;
   }
 }
+
+// Testing out this media query for high contrast
+@media (forced-colors: active) {
+  button {
+    /* Use a border instead, since this barely looks like a button in forced-colors mode */
+    border: 2px ButtonText solid;
+  }
+}
